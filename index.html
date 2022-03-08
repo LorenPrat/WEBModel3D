@@ -18,8 +18,30 @@
       <a-entity
         id="animated-model"
         gltf-model="#animated-asset"
-        scale="0.5">
+        scale="2">
       </a-entity>
+          <a-box position='1.7 0 -1' material='color: cyan; opacity:0.7'
+            height="0.2" width="0.2" depth="0.2"
+            animation="property: rotation; to:0 360 0; dur: 5000; easing: linear; loop: true">
+          </a-box>
+
+
+
+          <a-plane height="2" width= "3" color="blue" position="0 0 0" rotation="-90 0 0" material="opacity:0.9">
+            <a-text value="Loren" position="-1.2 0.8 0.1" height="3" width="3" color="red"></a-text>
+            <a-image src="profile.jpg" width="0.5" height="0.7" position="1 0.6 0.1"></a-image>
+
+            <a-text value=
+            "\n Graduated Engineering Student
+            \n E-mail: mimimimimi
+            \n Linked-In: meh"
+            position="-1.3 0.5 0.1" height="2" width="2" color="white"></a-text>
+            <a-entity id="linkedinIcon">
+            <a-image src="linkedinLogo.png" width="0.2" height="0.2" position="1 0 0.1">
+            </a-image>
+
+              </a-entity>
+          </a-plane>
   	</a-marker>
   	<a-entity camera></a-entity>
     </a-scene>
